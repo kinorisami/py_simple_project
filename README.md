@@ -1,4 +1,5 @@
 # python_simple_project
 
-## 1. alien_invasion (from python编程从入门到实战)
+## 1. alien_invasion 
+This project is based on *Python Crash Course* by Eric Matthes.
 
