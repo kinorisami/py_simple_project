@@ -1,8 +1,11 @@
 import pygame
+from pygame.sprite import Sprite
 
-class Ship:
+class Ship(Sprite):
 
     def __init__(self, ai_game):
+
+        super().__init__()
 
         self.settings = ai_game.settings
         self.screen = ai_game.screen
@@ -38,3 +41,8 @@ class Ship:
 
         self.rect.x = self.x
         self.rect.y = self.y
+
+    def center_ship(self):
+
+        self.rect.midbottom = self.screen_rect.midbottom
+        self.x, self.y = self.rect.x, self.rect.y
